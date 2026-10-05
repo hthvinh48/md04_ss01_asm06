@@ -1,0 +1,10 @@
+Cách chia nào giúp team phát triển nhanh hơn?
+
+Nhận định của tôi: kết hợp cả hai, trong đó Business Capability để chia team và ranh giới service, Sub-domain để quyết định đầu tư.
+
+Giai đoạn đầu: Business Capability nhanh hơn. Ranh giới rõ ràng theo chức năng, mỗi team nhận một service, ít phải họp bàn, loose coupling dễ đạt.
+Giai đoạn lớn: Sub-domain hiệu quả hơn. Team giỏi nhất tập trung vào For You Algorithm và Ads (Core), phần Generic như Transcoding, CDN, Notification dùng dịch vụ có sẵn, tiết kiệm hàng tháng phát triển.
+Quy trình thực tế: Chia service theo Business Capability, rồi gắn nhãn Core/Supporting/Generic cho từng service để quyết định tự xây hay mua, và đầu tư bao nhiêu.
+Kết luận
+
+Hai phương pháp không loại trừ nhau: Business Capability trả lời "hệ thống gồm những phần nào", còn Sub-domain trả lời "phần nào quan trọng nhất và nên đầu tư thế nào". Với hệ thống dữ liệu khổng lồ như TikTok, kết hợp cả hai cho phép vừa chia team độc lập, vừa dồn nguồn lực vào thuật toán gợi ý và quảng cáo, nơi tạo ra lợi thế cạnh tranh thực sự.
